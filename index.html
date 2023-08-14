@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="app">
+      <h1>Time for trivia questions!</h1>
+
+      <div class="quiz">
+        <h2 id="question"></h2>
+        <div id="answer-buttons">
+          <ul class="options">
+            <li>
+              <input type="radio" id="a" name="answer" class="answer" />
+              <label id="a-text" for="a">Question</label>
+            </li>
+
+            <li>
+              <input type="radio" id="b" name="answer" class="answer" />
+              <label id="b-text" for="b">Question</label>
+            </li>
+
+            <li>
+              <input type="radio" id="c" name="answer" class="answer" />
+              <label id="c-text" for="c">Question</label>
+            </li>
+
+            <li>
+              <input type="radio" id="d" name="answer" class="answer" />
+              <label id="d-text" for="d">Question</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="next-btn-container">
+          <button class="next-btn btn">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
