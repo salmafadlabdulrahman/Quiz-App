@@ -54,7 +54,7 @@ loadQuiz();
 function loadQuiz() {
   deselectAnswers();
   const currentQuestion = quizData[currentQuestionIndex];
-  question.innerHTML = currentQuestion.question;
+  question.innerHTML = `${currentQuestionIndex + 1}. ${currentQuestion.question}`
   a.innerText = currentQuestion.a;
   b.innerText = currentQuestion.b;
   c.innerText = currentQuestion.c;
